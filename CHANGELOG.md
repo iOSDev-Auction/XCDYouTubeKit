@@ -1,3 +1,27 @@
+#### Version 2.15.0
+
+* Adaptation to YouTube API change (#501)
+* New `XCDYouTubeErrorUnknown` error code (#484, #491)
+* New `XCDYouTubeErrorTooManyRequests` error code ([comment](https://github.com/0xced/XCDYouTubeKit/issues/501#issuecomment-716812836))
+* Improve error message for `XCDYouTubeErrorNoStreamAvailable` code
+* Remove platforms in Swift Package Manager (#496)
+
+#### Version 2.14.1
+
+* Adaptation to YouTube API change. (#487)
+
+#### Version 2.14.0
+
+* Add new `XCDYouTubeErrorEmptyResponse` error (#479)
+* Adaptation to YouTube API change. (a048776eb0d87de869c1636e244d78ffb311adc6)
+
+#### Version 2.13.0
+
+* Deprecated `-[XCDYouTubeVideo thumbnailURL]` use `-[XCDYouTubeVideo thumbnailURLs]` (#477)
+* Exclude plist files from Swift Package Manager (#478)
+* Annotate `languageIdentifier` argument as `nullable` in `XCDYouTubeVideoOperation`
+* Add new `author`, `videoDescription` and `channelIdentifier` properties to `XCDYouTubeVideo` (#471)
+
 #### Version 2.12.0
 
 * Add the ability to specify which `streamURLs` to query via `-[XCDYouTubeClient queryVideo:video:streamURLsToQuery:options:cookies:completionHandler:]` & `XCDYouTubeVideoQueryOperation` class.
