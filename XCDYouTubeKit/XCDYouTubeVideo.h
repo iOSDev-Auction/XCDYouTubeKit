@@ -70,6 +70,18 @@ extern NSString *const XCDYouTubeVideoQualityHTTPLiveStreaming;
  */
 @property (nonatomic, readonly) NSString *title;
 /**
+ * The name of author that uploaded this video.
+ */
+@property (nonatomic, readonly) NSString *author;
+/**
+ * The channel identifier of YouTube channel that this video belongs to.
+ */
+@property (nonatomic, readonly) NSString *channelIdentifier;
+/**
+ * The description of the video.
+ */
+@property (nonatomic, readonly) NSString *videoDescription;
+/**
  *  The duration of the video in seconds.
  */
 @property (nonatomic, readonly) NSTimeInterval duration;
@@ -78,9 +90,14 @@ extern NSString *const XCDYouTubeVideoQualityHTTPLiveStreaming;
  */
 @property (nonatomic, readonly) NSInteger viewCount;
 /**
+ *  An array of thumbnail URLs for an images of different sizes. Ordered from smaller to bigger.
+ */
+@property (nonatomic, readonly, nullable) NSArray<NSURL *> *thumbnailURLs;
+/**
  *  A thumbnail URL for an image of small size, i.e. 120×90. May be nil.
  */
-@property (nonatomic, readonly, nullable) NSURL *thumbnailURL;
+@property (nonatomic, readonly, nullable) NSURL *thumbnailURL
+	DEPRECATED_MSG_ATTRIBUTE("Use `thumbnailURLs` instead.");
 /**
  *  A thumbnail URL for an image of small size, i.e. 120×90. May be nil.
  */
@@ -112,10 +129,10 @@ extern NSString *const XCDYouTubeVideoQualityHTTPLiveStreaming;
 
 /**
 
-*  A streamURL that is compatible on Apple devices.
+*  A streamURL that is compatible on Apple devices (can be `nil`)
 *  The `streamURLs` may contain both video and audio streams, some video streams do not contain any audio. This property will return a video stream that contains both audio and video with a maximum video quality of 720p in the case of videos that aren't live. Also, this properly will return the URL to a live stream in the case of live videos.
 */
-@property (nonatomic, readonly) NSURL *streamURL;
+@property (nonatomic, readonly, nullable) NSURL *streamURL;
 
 /**
 
