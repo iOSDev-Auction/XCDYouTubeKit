@@ -456,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = ;
+			shellScript = "";
 		};
 		C23803F31B3847C60022F240 /* Analyzer */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -470,7 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = ;
+			shellScript = "";
 		};
 		C249AAA519C045C400BA17AE /* Delete *.gcda files */ = {
 			isa = PBXShellScriptBuildPhase;
