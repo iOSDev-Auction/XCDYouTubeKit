@@ -602,6 +602,7 @@
 				);
 				WARNING_CFLAGS = (
 					"$(inherited)",
+					"-Wno-declaration-after-statement",
 					"-Wno-documentation-unknown-command",
 					"-Wno-nullable-to-nonnull-conversion",
 					"-Wno-reserved-id-macro",
@@ -814,10 +815,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wno-auto-import",
+					"-Wno-declaration-after-statement",
 				);
 			};
 			name = Debug;
@@ -828,10 +830,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wno-auto-import",
+					"-Wno-declaration-after-statement",
 				);
 			};
 			name = Release;
