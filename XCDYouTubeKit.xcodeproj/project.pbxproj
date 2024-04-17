@@ -22,6 +22,8 @@
 		01D2370C1FA03AF100A13E5F /* XCDYouTubeDashManifestXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D237091FA03AC100A13E5F /* XCDYouTubeDashManifestXML.m */; };
 		01EAD0DF23FACB0800F1E936 /* XCDYouTubeVideoQueryOperationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EAD0DE23FACB0800F1E936 /* XCDYouTubeVideoQueryOperationTestCase.m */; };
 		01FB237C2191F98100DC8019 /* Cookies in Resources */ = {isa = PBXBuildFile; fileRef = 01FB237B2191F98100DC8019 /* Cookies */; };
+		4ED693562BCF9E41000B97F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4ED693552BCF9E41000B97F4 /* PrivacyInfo.xcprivacy */; };
+		4ED693572BCF9E41000B97F4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4ED693552BCF9E41000B97F4 /* PrivacyInfo.xcprivacy */; };
 		C20F57A818817D5400EDBFB0 /* XCDYouTubeClientTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F57A718817D5400EDBFB0 /* XCDYouTubeClientTestCase.m */; };
 		C2142F2A19644779000FA9C0 /* XCDYouTubeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D0CBAC19122A8F00DA8CD4 /* XCDYouTubeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C215BEB91BE2E5B500F9783B /* XCDYouTubeVideoWebpage.h in Headers */ = {isa = PBXBuildFile; fileRef = C2386B1C1974036300646123 /* XCDYouTubeVideoWebpage.h */; };
@@ -121,6 +123,7 @@
 		01D237091FA03AC100A13E5F /* XCDYouTubeDashManifestXML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeDashManifestXML.m; sourceTree = "<group>"; };
 		01EAD0DE23FACB0800F1E936 /* XCDYouTubeVideoQueryOperationTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeVideoQueryOperationTestCase.m; sourceTree = "<group>"; };
 		01FB237B2191F98100DC8019 /* Cookies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cookies; sourceTree = "<group>"; };
+		4ED693552BCF9E41000B97F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		C20F579B18817D5400EDBFB0 /* XCDYouTubeKit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCDYouTubeKit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20F57A718817D5400EDBFB0 /* XCDYouTubeClientTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCDYouTubeClientTestCase.m; sourceTree = "<group>"; };
 		C22263371B33FDE000BA6719 /* XCTestWorkarounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTestWorkarounds.m; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 		C2A3F2C417F4827800AC1C3B = {
 			isa = PBXGroup;
 			children = (
+				4ED693552BCF9E41000B97F4 /* PrivacyInfo.xcprivacy */,
 				C2A3F2D217F4827800AC1C3B /* XCDYouTubeKit */,
 				C20F57A118817D5400EDBFB0 /* XCDYouTubeKit Tests */,
 				C2A3F2CE17F4827800AC1C3B /* Products */,
@@ -429,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED693572BCF9E41000B97F4 /* PrivacyInfo.xcprivacy in Resources */,
 				01FB237C2191F98100DC8019 /* Cookies in Resources */,
 				C2D0CC5D19126E1200DA8CD4 /* Cassettes in Resources */,
 			);
@@ -438,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED693562BCF9E41000B97F4 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
