@@ -249,6 +249,9 @@ static NSError *YouTubeError(NSError *error, NSSet *regionsAllowed, NSString *la
 		case XCDYouTubeRequestTypeDashManifest:
 			[self handleDashManifestWithXMLString:responseString response:response];
 			break;
+		default: // Added to satisfy -Wswitch-default
+			XCDYouTubeLogWarning(@"Unhandled request type: %tu", requestType);
+			break;
 	}
 }
 
